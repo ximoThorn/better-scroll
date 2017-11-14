@@ -2,7 +2,15 @@
 
 > A Vue.js,better-scroll project   
 
-包括常见的移动端轮播图，上拉加载和下拉刷新，选择pick，常规的滚动筛选
+代码路漫漫其修远兮，吾将上下而求索;再次共勉
+
+better-scroll 移动端最好的轮播插件，还有自己的vue学习之路
+
+看过大神的demo(https://github.com/ustbhuangyi/better-scroll)源码后
+
+自己学习过程中写的demo 基本上就是对better-scroll的api的基本运用和vue的简单运用 结合新手学习........
+
+移动端轮播图组件，上拉加载和下拉刷新组件，选择pick组件，常规的滚动筛选组件
 
 ## Build Setup
 
