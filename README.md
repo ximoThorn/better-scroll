@@ -6,7 +6,7 @@
 
 better-scroll 移动端最好的轮播插件，还有自己的vue学习之路
 
-看过大神的demo(https://github.com/ustbhuangyi/better-scroll)源码后
+看过大神的[demo](https://github.com/ustbhuangyi/better-scroll)源码后
 
 自己学习过程中写的demo 基本上就是对better-scroll的api的基本运用和vue的简单运用 结合新手学习........
 
