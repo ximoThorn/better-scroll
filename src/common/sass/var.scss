@@ -1,0 +1,26 @@
+$percent : 100%;
+$conBgColor: red;
+$currentDot: #fff;
+$dotColor: rgba(144,144,144,.8);
+$borderColor: #cecece; 
+
+
+body, html {
+    width: $percent;
+}
+
+ul,li {
+      list-style-type: none;
+}
+
+div, ul, li, p {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: $conBgColor;
+}
+.hide {
+    display: none;
+}

@@ -1,0 +1,308 @@
+{
+    "picker": [
+        [
+            {
+                "text":"君奉天",
+                "value": 1
+            },
+            {
+                "text":"玉逍遥",
+                "value": 2
+            },
+            {
+                "text":"叶小钗",
+                "value": 3
+            },
+            {
+                "text":"一页书",
+                "value": 4
+            },
+            {
+                "text":"素还真",
+                "value": 5
+            },
+            {
+                "text":"剑非刀",
+                "value": 6
+            },
+            {
+                "text":"月才子",
+                "value": 7
+            },
+            {
+                "text":"巫妖",
+                "value": 8
+            },
+            {
+                "text": "神谕者",
+                "value": 9
+            },
+            {
+                "text": "撼地神牛",
+                "value": 10
+            },
+            {
+                "text": "蓝胖子",
+                "value": 11
+            },
+            {
+                "text": "水晶室女",
+                "value": 12
+            },
+            {
+                "text":"莉娜",
+                "value": 13
+            },
+            {
+                "text": "斯拉克",
+                "value": 14
+            },
+            {
+                "text": "无梦生",
+                "value": 15
+            }
+        ]
+    ],
+    "Twopicker": [
+        [
+            {
+                "text": "君奉天",
+                "value": 1
+            },
+            {
+                "text": "玉逍遥",
+                "value": 2
+            },
+            {
+                "text": "叶小钗",
+                "value": 3
+            },
+            {
+                "text": "一页书",
+                "value": 4
+            },
+            {
+                "text": "素还真",
+                "value": 5
+            },
+            {
+                "text": "剑非刀",
+                "value": 6
+            },
+            {
+                "text": "月才子",
+                "value": 7
+            },
+            {
+                "text": "巫妖",
+                "value": 8
+            },
+            {
+                "text": "神谕者",
+                "value": 9
+            },
+            {
+                "text": "撼地神牛",
+                "value": 10
+            },
+            {
+                "text": "蓝胖子",
+                "value": 11
+            },
+            {
+                "text": "水晶室女",
+                "value": 12
+            },
+            {
+                "text": "莉娜",
+                "value": 13
+            },
+            {
+                "text": "斯拉克",
+                "value": 14
+            },
+            {
+                "text": "无梦生",
+                "value": 15
+            }
+        ],
+        [
+            {
+                "text": "多撒多",
+                "value": 1
+            },
+            {
+                "text": "老地方",
+                "value": 1
+            },
+            {
+                "text": "绮罗生",
+                "value": 1
+            },
+            {
+                "text": "意琦行",
+                "value": 1
+            },
+            {
+                "text": "最光阴",
+                "value": 1
+            },
+            {
+                "text": "史蒂夫",
+                "value": 1
+            },
+            {
+                "text": "殊十二",
+                "value": 1
+            },
+            {
+                "text": "剑之初",
+                "value": 1
+            },
+            {
+                "text": "霁无瑕",
+                "value": 1
+            }
+        ]
+    ],
+    "Threepicker": [
+        [
+            {
+                "text": "奉天",
+                "value": 1
+            },
+            {
+                "text": "逍遥",
+                "value": 2
+            },
+            {
+                "text": "小钗",
+                "value": 3
+            },
+            {
+                "text": "页书",
+                "value": 4
+            },
+            {
+                "text": "还真",
+                "value": 5
+            },
+            {
+                "text": "非刀",
+                "value": 6
+            },
+            {
+                "text": "才子",
+                "value": 7
+            },
+            {
+                "text": "巫妖",
+                "value": 8
+            },
+            {
+                "text": "谕者",
+                "value": 9
+            },
+            {
+                "text": "神牛",
+                "value": 10
+            },
+            {
+                "text": "胖子",
+                "value": 11
+            },
+            {
+                "text": "水晶",
+                "value": 12
+            },
+            {
+                "text": "娜",
+                "value": 13
+            },
+            {
+                "text": "拉克",
+                "value": 14
+            },
+            {
+                "text": "梦生",
+                "value": 15
+            }
+        ],
+        [
+            {
+                "text": "撒多",
+                "value": 1
+            },
+            {
+                "text": "地方",
+                "value": 1
+            },
+            {
+                "text": "罗生",
+                "value": 1
+            },
+            {
+                "text": "琦行",
+                "value": 1
+            },
+            {
+                "text": "最阴",
+                "value": 1
+            },
+            {
+                "text": "蒂夫",
+                "value": 1
+            },
+            {
+                "text": "殊二",
+                "value": 1
+            },
+            {
+                "text": "剑初",
+                "value": 1
+            },
+            {
+                "text": "无瑕",
+                "value": 1
+            }
+        ],
+        [
+            {
+                "text": "光影",
+                "value": 1
+            },
+            {
+                "text": "但是",
+                "value": 1
+            },
+            {
+                "text": "东风",
+                "value": 1
+            },
+            {
+                "text": "覆盖",
+                "value": 1
+            },
+            {
+                "text": "敢死",
+                "value": 1
+            },
+            {
+                "text": "主张",
+                "value": 1
+            },
+            {
+                "text": "十二",
+                "value": 1
+            },
+            {
+                "text": "萨达",
+                "value": 1
+            },
+            {
+                "text": "缩放",
+                "value": 1
+            }
+        ]
+    ]
+}
