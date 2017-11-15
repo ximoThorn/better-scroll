@@ -1,17 +1,17 @@
 <template>
-    <div class="wrapper" ref="wrapper">
-        <scroll>
+    <div class="wrapper">
+        <commonScroll v-if="listArr.length" :data="listArr">
             <ul class="content">
                 <li v-for="item in listArr">{{item}}</li>
                 
             </ul>
-        </scroll>
+        </commonScroll>
     </div>
 </template>
 
 <script>
     // import BScroll from "better-scroll"
-    import scroll from './../base/scroll.vue'
+    import commonScroll from './../base/commonScroll.vue'
 
     export default {
         data() {
@@ -20,7 +20,7 @@
             }
         },
         components: {
-            scroll//组件的复用性
+            commonScroll//组件的复用性
         },
         mounted() {
             // this.$nextTick(() => {
@@ -40,19 +40,24 @@
         position: absolute;
         width: $percent;
         height: $percent;
-        .content {
-            background-color: $conBgColor;
-            li {
-                width: $percent;
-                height: 40px;
-                line-height: 40px;
-                // background-color: #ccc;
-                color: #fff;
-                padding: 0 0 0 10px;
-                border-bottom: 1px solid #000;
-                box-sizing: border-box;
+        div {
+            width: $percent;
+            height: $percent;
+            .content {
+                background-color: $conBgColor;
+                li {
+                    width: $percent;
+                    height: 40px;
+                    line-height: 40px;
+                    // background-color: #ccc;
+                    color: #fff;
+                    padding: 0 0 0 10px;
+                    border-bottom: 1px solid #000;
+                    box-sizing: border-box;
+                }
             }
         }
+
     }
 </style>
 
