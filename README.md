@@ -2,7 +2,7 @@
 
 > A Vue.js,better-scroll project   
 
-代码路漫漫其修远兮，吾将上下而求索;再次共勉
+代码路漫漫其修远兮，吾将上下而求索;  再次共勉
 
 better-scroll 移动端最好的轮播插件，还有自己的vue学习之路
 

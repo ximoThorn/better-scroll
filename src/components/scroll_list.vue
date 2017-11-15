@@ -1,41 +1,34 @@
 <template>
     <div class="wrapper" ref="wrapper">
-        <ul class="content">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-            <li>11</li>
-            <li>12</li>
-            <li>13</li>
-            <li>14</li>
-            <li>15</li>
-            <li>16</li>
-            <li>17</li>
-            <li>18</li>
-            <li>19</li>
-            <li>20</li>
-        </ul>
+        <scroll>
+            <ul class="content">
+                <li v-for="item in listArr">{{item}}</li>
+                
+            </ul>
+        </scroll>
     </div>
 </template>
 
 <script>
-    import BScroll from 'better-scroll'
+    // import BScroll from "better-scroll"
+    import scroll from './../base/scroll.vue'
 
     export default {
+        data() {
+            return {
+                listArr: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+            }
+        },
+        components: {
+            scroll//组件的复用性
+        },
         mounted() {
-            this.$nextTick(() => {
-                this.scroll = new BScroll(this.$refs.wrapper, {
-                    click: true,
-                    momentum: true
-                })
-            })
+            // this.$nextTick(() => {
+            //     this.scroll = new BScroll(this.$refs.wrapper, {
+            //         click: true,
+            //         momentum: true
+            //     })
+            // })
         }
     }
 </script>
