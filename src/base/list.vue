@@ -31,12 +31,12 @@ export default {
     data() {
         return {
             data: "",
-            cacluateHeight: [],
             currentNavIndex: 0,
         }
     },
     created() {
         this.data = this.cityDatas;
+        this.cacluateHeight = [];
 
         this.$nextTick(() => {
             this.init();
@@ -53,11 +53,14 @@ export default {
 
             this.list.on("scroll", (po) => {
                 this._navScroll(po.y);
+               
             })
         },
         _cacluateHeight() {
+            this.cacluateHeight = [];
+
             let cacluateChild = this.$refs.cityContent.children,
-                height = -10;
+                height = 0;
             
             this.cacluateHeight.push(height);
             for (let i = 0; i < cacluateChild.length; i++) {
@@ -68,20 +71,27 @@ export default {
             console.log(this.cacluateHeight);
         },
         _navScroll(y) {
+
             let heightArr = this.cacluateHeight,
                 poy = Math.abs(y);
 
-            for (let i = 0; i < heightArr.length; i++) {
-                if (heightArr[i] < poy && heightArr[i+1] >= poy) {
-                    this.currentNavIndex = i;
-                    return;
+            if (y >= 0) {//当始终在顶部的时候
+                this.currentNavIndex = 0;
+            } else {
+                
+                for (let i = 0; i < heightArr.length; i++) {
+                    if (!heightArr[i+1] || (heightArr[i] < poy && heightArr[i+1] >= poy)) {
+                        this.currentNavIndex = i;
+                        
+                        return;
+                    };
                 };
-            };  
+            };
         },
         _navClick(index) {
             let cacluateChild = this.$refs.cityContent.children;
 
-            this.list.scrollToElement(cacluateChild[index]);
+            this.list.scrollToElement(cacluateChild[index], 500);
 
             this.currentNavIndex = index;
         },
