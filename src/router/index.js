@@ -6,6 +6,7 @@ import pullDownOrUp from '@/components/pullDownOrUp'
 import swiper from '@/components/swiper'
 import selectOptions from '@/components/selectOptions'
 import indexList from "@/components/indexList"
+import dataPolymerization from "@/components/dataPolymerization"
 
 Vue.use(Router)
 
@@ -39,5 +40,9 @@ export default new Router({
       path: '/indexList',
       component: indexList,
     },
+    {
+      path: "/dataPolymerization",
+      component: dataPolymerization
+    }
   ]
 })

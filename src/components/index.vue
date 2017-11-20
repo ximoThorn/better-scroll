@@ -16,7 +16,9 @@
       <li>
         <router-link :to="{path: 'selectOptions'}">selectOptions</router-link>
       </li>
-      
+      <li>
+        <router-link :to="{path: 'dataPolymerization'}">dataPolymerization</router-link>
+      </li>
     </ul>
   </div>
 </template>

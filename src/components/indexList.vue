@@ -2,7 +2,7 @@
     <div class="wrap">
         <div class="theCity">所在城市: {{locaCity}}</div>
         <div class="list_wrap">
-            <list v-if="cityDatas.length" :cityDatas="cityDatas" @selected="selectedCity">
+            <list ref="listView" v-if="cityDatas.length" :cityDatas="cityDatas" @selected="selectedCity">
             
             </list>
         </div>
@@ -30,9 +30,11 @@ export default {
     methods: {
         init() {
             this.cityDatas = cityData;
+            
         },
         selectedCity(city) {
             this.locaCity = city;
+            console.log(this.$refs.listView)
         }
     },
 }
