@@ -1,27 +1,24 @@
 <template>
     <transition name="picker-fade">
-        <div class="picker" v-show="showState" @click="hide">
-
-            <transition name="picker-move">
-                <div class="picker_panel" v-show="showState">
-                    <div class="picker_choose">
-                        <span class="cancel" @click="_cancel">{{cancelTxt}}</span>
-                        <span class="title">{{titleTxt}}</span>
-                        <span class="confirm" @click="_confirm">{{confirmTxt}}</span>
-                    </div>
-                    <div class="picker_content">
-                        <div class="mask_top"></div>
-                        <div class="mask_bottom"></div>
-                        <div class="wheel_wrapper" ref="wheel_wrapper">
-                            <div class="wheel"  v-for="items in wheelData">
-                                <ul>
-                                    <li class="wheelTxt" v-for="item in items">{{item.text}}</li>
-                                </ul>
-                            </div>
+        <div class="picker" @click="hide">
+            <div @click.stop class="picker_panel">
+                <div class="picker_choose">
+                    <span class="cancel" @click="_cancel">{{cancelTxt}}</span>
+                    <span class="title">{{titleTxt}}</span>
+                    <span class="confirm" @click="_confirm">{{confirmTxt}}</span>
+                </div>
+                <div class="picker_content">
+                    <div class="mask_top"></div>
+                    <div class="mask_bottom"></div>
+                    <div class="wheel_wrapper" ref="wheel_wrapper">
+                        <div class="wheel"  v-for="items in wheelData">
+                            <ul>
+                                <li class="wheelTxt" v-for="item in items">{{item.text}}</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </transition>
+            </div>
             
         </div>
     </transition>
@@ -32,10 +29,10 @@ import BScroll from 'better-scroll'
 
 export default {
     props: {
-        showState: {
-            type: Boolean,
-            default: false,
-        },
+        // showState: {
+        //     type: Boolean,
+        //     default: false,
+        // },
         wheelData: {
             type: Array,
             default: [],
@@ -117,18 +114,18 @@ export default {
 <style lang="scss" scoped>
     @import "./../common/sass/var.scss";
     
-    .picker-fade-enter, .picker-fade-leave-active {
+    .picker-fade-enter, .picker-fade-leave-to {
         opacity: 0;
+        .picker_panel {
+            transform: translateY(273px);
+        }
     }
     .picker-fade-enter-active, .picker-fade-leave-active {
         transition: all .3s ease-in-out;
-    }
-    .picker-move-enter, .picker-move-leave-active {
-        transform: translateY(273px);
-    }       
-    .picker-move-enter-active, .picker-move-leave-active {
-        transition: all .3s ease-in-out;
-    }   
+        .picker_panel {
+            transition: all .3s ease-in-out;
+        }
+    }  
     .picker {
         position: fixed;
         left: 0;

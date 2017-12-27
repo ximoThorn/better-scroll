@@ -9,13 +9,13 @@
        <p class="select" @click="threePickerShow">
            {{SelectTxts[2]}}
        </p>
-        <picker v-if="datas.length && showOne" :wheelData="datas" :showState="showOne" @change="_wheelChange" 
+        <picker v-if="datas.length && showOne" :wheelData="datas"  @change="_wheelChange" 
         @hideWheel="_showHideWheel" @selectedData="_selectedData" :selectedIndex="oneSelectedIndex"></picker>
 
-        <picker v-if="datas.length && showTwo" :wheelData="datas" :showState="showTwo" @change="_wheelChange" 
+        <picker v-if="datas.length && showTwo" :wheelData="datas" @change="_wheelChange" 
         @hideWheel="_showHideWheel" @selectedData="_selectedData" :selectedIndex="twoSelectedIndex"></picker>
 
-        <picker v-if="datas.length && showThree" :wheelData="datas" :showState="showThree" @change="_wheelChange" 
+        <picker v-if="datas.length && showThree" :wheelData="datas" @change="_wheelChange" 
         @hideWheel="_showHideWheel" @selectedData="_selectedData" :selectedIndex="threeSelectedIndex"></picker>
    </div>
 </template>
